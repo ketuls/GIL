@@ -1,0 +1,50 @@
+import this
+
+
+from __future__ import braces
+
+
+, is tuple constructor
+
+
+def append1(new_item, a_list=[]):
+    a_list.append(new_item)
+    return a_list
+
+
+def append(new_item, a_list=None):
+    if a_list is None:
+        a_list = []
+    a_list.append(new_item)
+    return a_list
+
+
+Python 2 and 3
+
+range(5), range(5)
+
+
+
+mypackage/
+    __init__.py
+    submodule1.py
+    submodule2.py
+and the code below is in submodule1.py:
+# Python 2 only:
+import submodule2
+# Python 2 and 3:
+from . import submodule2
+
+
+
+
+z = map(f,range(1000000))
+
+
+
+# Python 2 only:
+for key in heights.iterkeys():
+    ...
+# Python 2 and 3:
+for key in heights:
+    ...
